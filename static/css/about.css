@@ -1,0 +1,34 @@
+#prof-image{
+  max-width: 45%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.col img {
+  float: left;
+  margin-right: 50px;
+}
+
+*{
+  color:#323232;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h4 {
+  font-size: 16px;
+  color: #99979E;
+}
+
+p{
+  margin-bottom: 18px;
+}
+
+.links a:visited {
+  color:#4E76A0;
+  text-decoration: none;
+}
+.links a:hover {
+  color:#ED9845;
+  text-decoration: none;
+}
