@@ -1,0 +1,28 @@
+.name {
+  color:black;
+  font-family: verdana;
+  font-size: 70px;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.description {
+  color:#99979E;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@media screen and (max-width: 500px) {
+  .name{
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .description{
+    font-size: 15px;
+  }
+
+}

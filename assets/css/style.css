@@ -1,0 +1,28 @@
+.navBar {
+  padding-top: 30px;
+  grid-area: navBar;
+}
+.jumbotron { grid-area: jumbotron; }
+.horizontalCards { grid-area: horizontalCards; }
+.squareCards { grid-area: squareCards; }
+.Footer { grid-area: Footer; }
+
+.root-container {
+  display: grid;
+  grid-template-areas:
+    'navBar'
+    'jumbotron'
+    'horizontalCards'
+    'squareCards'
+    'Footer';
+  grid-gap: 1px;
+  background-color: white;
+  height:100vh;
+  width: 100vw;
+  grid-auto-rows: minmax(min-content, max-content);
+}
+.root-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
