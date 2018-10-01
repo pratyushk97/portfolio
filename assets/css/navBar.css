@@ -66,8 +66,16 @@ body {
     float: none;
     display: block;
     text-align: middle;
-    font-size: 9px;
+    font-size: 15px;
     padding-left: 0px;
+  }
+
+  .header a.active:after {
+      color: #4E76A0;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0px;
   }
   .header-right {
     padding-top: 20px;

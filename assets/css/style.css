@@ -2,13 +2,17 @@
   padding-top: 30px;
   grid-area: navBar;
 }
-.jumbotron { grid-area: jumbotron; }
+.jumbotron {
+  grid-area: jumbotron;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .horizontalCards { grid-area: horizontalCards; }
 .squareCards { grid-area: squareCards; }
 .Footer { grid-area: Footer; }
 
 .horizontalCards > *{
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 .root-container {
@@ -24,8 +28,8 @@
   height:100vh;
   width: 100vw;
   grid-auto-rows: minmax(min-content, max-content);
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: 400px;
+  padding-left: 400px;
 }
 .root-container > div {
   background-color: rgba(255, 255, 255, 0.8);
