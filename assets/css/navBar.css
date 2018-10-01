@@ -8,7 +8,6 @@ body {
 .header {
   overflow: hidden;
   background-color: white;
-  padding: 20px 10px;
 }
 
 .header a {
@@ -26,7 +25,6 @@ body {
 .logoImg img{
   height: 70px;
   width: auto;
-  padding-left: 40px;
 }
 
 .header a:hover {
@@ -51,18 +49,17 @@ body {
 
 .header-right {
   float: right;
-  padding-right: 30px;
 }
 
 .header-right > * {
     display: block;
-    padding-right: 30px;
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 500px) {
   .logoImg img{
     padding-left: 0px;
-    height: 30px
+    height: 40px
   }
 
   .header a {
@@ -70,11 +67,11 @@ body {
     display: block;
     text-align: middle;
     font-size: 9px;
-    padding-right: 0px;
+    padding-left: 0px;
   }
   .header-right {
     padding-top: 20px;
     float: none;
-    padding-right: 0px;
+    padding-left: 0px;
   }
 }

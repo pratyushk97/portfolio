@@ -7,6 +7,10 @@
 .squareCards { grid-area: squareCards; }
 .Footer { grid-area: Footer; }
 
+.horizontalCards > *{
+  padding-bottom: 20px;
+}
+
 .root-container {
   display: grid;
   grid-template-areas:
@@ -20,9 +24,19 @@
   height:100vh;
   width: 100vw;
   grid-auto-rows: minmax(min-content, max-content);
+  padding-right: 200px;
+  padding-left: 200px;
 }
 .root-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .root-container{
+    padding-right: 0px;
+    padding-left: 0px;
+
+  }
 }
