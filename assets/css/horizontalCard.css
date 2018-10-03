@@ -1,13 +1,22 @@
+hr {
+    margin: 1.3vw 0;
+    border-width: 0.4vw;
+    width: 40%;
+    color: white;
+    border: 0;
+    border-top: 5px solid #eee;
+}
 .left {
   grid-area: left;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: center;
 }
 .right-top {
    grid-area: right-top;
-   border-top-right-radius: 15px;
-   font-size: 40px;
-   padding-top: 30px;
+   border-top-right-radius: 10px;
+   font-size: 2vw;
+   padding-top: 20px;
    color:white;
    float: left;
    text-align: left;
@@ -16,14 +25,27 @@
 
  }
 
+.right-middle {
+  grid-area: right-middle;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 1vw;
+  text-align: left;
+  color:white;
+
+}
+
 .right-bottom {
   grid-area: right-bottom;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 10px;
   padding-right: 10px;
   padding-left: 20px;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 1vw;
   text-align: left;
+  color:white;
+  padding-bottom: 20px;
 
 }
 
@@ -31,10 +53,13 @@
   display: grid;
   grid-template-areas:
     'left right-top'
+    'left right-middle'
     'left right-bottom';
+  height: 300px;
   background-color: white;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 2fr;
+  padding-bottom: 100px;
 
 
 
@@ -44,8 +69,40 @@
 }
 
 .cardLogo{
-  max-width: 400px;
-  max-height:260px;
+  max-width: 15vw;
+  max-height:15vw;
   height: auto;
   width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .cardLogo{
+    max-width: 30vw;
+    max-height:30vw;
+    height: auto;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  hr {
+      border-top: 2px solid #eee;
+  }
+
+  .grid-container {
+
+
+    height: 100px;
+    padding-bottom:150px;
+
+
+
+  }
+
+
+
+
 }

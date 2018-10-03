@@ -11,9 +11,6 @@
 .squareCards { grid-area: squareCards; }
 .Footer { grid-area: Footer; }
 
-.horizontalCards > *{
-  padding-bottom: 100px;
-}
 
 .root-container {
   display: grid;
@@ -28,11 +25,10 @@
   height:100vh;
   width: 100vw;
   grid-auto-rows: minmax(min-content, max-content);
-  padding-right: 400px;
-  padding-left: 400px;
+  padding-right: 350px;
+  padding-left: 350px;
 }
 .root-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 30px;
 }
