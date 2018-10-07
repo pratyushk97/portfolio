@@ -27,7 +27,7 @@
           <a class = "logoImg" href="index.html"><img  src="./assets/images/logo.png" /></a>
           <div class="header-right">
             <a class="active" href="#home">Work</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
           </div>
         </div>
       </div>
@@ -67,6 +67,18 @@
           <div style = "background-color:#02336b" class="right-bottom">Branding | Prototyping | User Testing </div>
       </div>
 
+      <div class="horizontalCard-container">
+        <div style = "background-image: linear-gradient(to right, #009933 , #004d1a)" class="left">
+          <img class = cardLogo  src="./assets/images/UCSD-logo.png" />
+        </div>
+        <div style = "background-color:#004d1a" class="right-top">
+          UCSD
+          <hr>
+        </div>
+        <div style = "background-color:#004d1a" class="right-middle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+        <div style = "background-color:#004d1a" class="right-bottom">Branding | Prototyping | User Testing </div>
+    </div>
+
     </div>
 
 
@@ -74,7 +86,7 @@
         <p>Other Design Work</p>
         <div class="squareCardsSection">
 
-          <div class="squareCards-container">
+          <a class="squareCards-container" href="index.html">
             <div class="image">
               <img class = cardImage  src="./assets/images/pal-card.png" />
             </div>
@@ -84,9 +96,9 @@
             <div class="description">
               Designing a learning environment for underserved children in City Heights, San Diego
             </div>
-          </div>
+          </a>
 
-          <div class="squareCards-container">
+          <a class="squareCards-container" href="index.html">
             <div class="image">
               <img class = cardImage  src="./assets/images/label-card.png" />
             </div>
@@ -96,9 +108,9 @@
             <div class="description">
               Redesigning the nutrition label experience as part of an introductory design course
             </div>
-          </div>
+          </a>
 
-          <div class="squareCards-container">
+          <a class="squareCards-container" href="index.html">
             <div class="image">
               <img class = cardImage  src="./assets/images/cleane-card.png" />
             </div>
@@ -108,9 +120,9 @@
             <div class="description">
               Creating stickers for a start-up as part of their marketing strategy to connect with students
             </div>
-          </div>
+          </a>
 
-          <div class="squareCards-container">
+          <a class="squareCards-container" href="index.html">
             <div class="image">
               <img class = cardImage  src="./assets/images/profession-avatars.jpg" />
             </div>
@@ -120,9 +132,9 @@
             <div class="description">
               Created avatars on Illustrator to practice and gain knowledge of designing flat graphics
             </div>
-          </div>
+          </a>
 
-          <div class="squareCards-container">
+          <a class="squareCards-container" href="index.html">
             <div class="image">
               <img class = cardImage  src="./assets/images/floral-card.png" />
             </div>
@@ -132,9 +144,9 @@
             <div class="description">
               Designed 3D type to better understand masking and shadow techniques using Photoshop
             </div>
-          </div>
+          </a>
 
-          <div class="squareCards-container">
+          <a class="squareCards-container" href="index.html">
             <div class="image">
               <img class = cardImage  src="./assets/images/icon-pack.jpg" />
             </div>
@@ -144,7 +156,7 @@
             <div class="description">
               Designed a summer themed icon pack to familiarize myself with Illustrator's resources
             </div>
-          </div>
+          </a>
 
         </div>
 
@@ -179,18 +191,6 @@
         });
 
       });
-
-      window.onscroll = function() {myFunction()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
 
     </script>
 

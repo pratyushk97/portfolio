@@ -20,3 +20,15 @@
   width: 30px;
 
 }
+
+.footerIcon img:hover{
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 500px) {
+  .footerBar{
+    font-size: 12px;
+  }
+
+
+}

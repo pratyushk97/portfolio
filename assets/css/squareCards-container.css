@@ -37,6 +37,12 @@
   justify-content:center;
 
 }
+
+.squareCards-container:hover {
+  transform: scale(1.1)
+
+}
+
 .squareCards-container > div {
     font-family: 'Roboto', sans-serif;
     background-color: white;
