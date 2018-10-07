@@ -1,3 +1,6 @@
+.html{
+  background-color: #fafafa;
+}
 .navBar {
   padding-top: 30px;
   grid-area: navBar;
@@ -7,8 +10,14 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.horizontalCards { grid-area: horizontalCards; }
+.horizontalCards {
+  grid-area: horizontalCards;
+
+}
 .squareCards { grid-area: squareCards; }
+.squareCards p{
+  font-size: 40px;
+}
 .Footer { grid-area: Footer; }
 
 
@@ -21,22 +30,27 @@
     'squareCards'
     'Footer';
   grid-gap: 1px;
-  background-color: white;
+  background-color: #fafafa;
   height:100vh;
   width: 100vw;
   grid-auto-rows: minmax(min-content, max-content);
-  padding-right: 350px;
-  padding-left: 350px;
+  padding-right: 20vw;
+  padding-left: 20vw;
 }
 .root-container > div {
   text-align: center;
-  font-size: 30px;
+  background-color: #fafafa;
 }
 
 @media screen and (max-width: 500px) {
   .root-container{
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 20px;
+    padding-left: 13px;
 
   }
+
+  .squareCards p{
+    font-size: 20px;
+  }
+
 }

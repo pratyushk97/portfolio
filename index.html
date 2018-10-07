@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" style = "background-color: #fafafa">
 
   <head>
 
@@ -10,6 +10,9 @@
     <link href="./assets/css/navBar.css" rel="stylesheet">
     <link href="./assets/css/jumbotron.css" rel="stylesheet">
     <link href="./assets/css/horizontalCard.css" rel="stylesheet">
+    <link href="./assets/css/squareCards-container.css" rel="stylesheet">
+    <link href="./assets/css/squareCards-section.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/images/favicon1.png">
 
   </head>
@@ -33,14 +36,14 @@
         <div class = "name">
           Pratyush Khurana
         </div>
-        <div class =  "description">
+        <div class =  "jumbo-description">
           UX Designer & Engineer
         </div>
       </div>
 
       <div class="horizontalCards">
 
-        <div class="grid-container" >
+        <div class="horizontalCard-container" >
           <div style = "background-image: linear-gradient(to right, #8e1c20 , #54182d)" class="left">
             <img class = cardLogo  src="./assets/images/etihad-airways-logo.png" />
           </div>
@@ -52,7 +55,7 @@
           <div style = "background-color:#54182d" class="right-bottom">Branding | Prototyping | User Testing</div>
         </div>
 
-        <div class="grid-container">
+        <div class="horizontalCard-container">
           <div style = "background-image: linear-gradient(to right, #4286f4 , #02336b)" class="left">
             <img class = cardLogo  src="./assets/images/Letter-X-icon.png" />
           </div>
@@ -67,8 +70,102 @@
     </div>
 
 
-      <div class="squareCards">squareCards</div>
-      <div class="Footer">Footer</div>
+      <div class="squareCards">
+        <p>Other Design Work</p>
+        <div class="squareCardsSection">
+
+          <div class="squareCards-container">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/pal-card.png" />
+            </div>
+            <div class="title">
+              Mobile Classroom Experience
+            </div>
+            <div class="description">
+              Designing a learning environment for underserved children in City Heights, San Diego
+            </div>
+          </div>
+
+          <div class="squareCards-container">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/label-card.png" />
+            </div>
+            <div class="title">
+              Nutrition Label Experience
+            </div>
+            <div class="description">
+              Redesigning the nutrition label experience as part of an introductory design course
+            </div>
+          </div>
+
+          <div class="squareCards-container">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/cleane-card.png" />
+            </div>
+            <div class="title">
+              Designing with Cleane.io
+            </div>
+            <div class="description">
+              Creating stickers for a start-up as part of their marketing strategy to connect with students
+            </div>
+          </div>
+
+          <div class="squareCards-container">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/profession-avatars.jpg" />
+            </div>
+            <div class="title">
+              Profession Avatars
+            </div>
+            <div class="description">
+              Created avatars on Illustrator to practice and gain knowledge of designing flat graphics
+            </div>
+          </div>
+
+          <div class="squareCards-container">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/floral-card.png" />
+            </div>
+            <div class="title">
+              Floral Typography
+            </div>
+            <div class="description">
+              Designed 3D type to better understand masking and shadow techniques using Photoshop
+            </div>
+          </div>
+
+          <div class="squareCards-container">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/icon-pack.jpg" />
+            </div>
+            <div class="title">
+              Icon Pack
+            </div>
+            <div class="description">
+              Designed a summer themed icon pack to familiarize myself with Illustrator's resources
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="Footer">
+
+          <div class="footerBar">
+            Pratyush Khurana
+            <div class="footer-right">
+              <a class = "footerIcon" href="index.html"><img src="./assets/images/fileicon.png" /></a>
+              <a class = "footerIcon" href="index.html"><img src="./assets/images/email.png"   /></a>
+              <a class = "footerIcon" href="index.html"><img src="./assets/images/linkedin.png" /></a>
+            </div>
+          </div>
+
+
+      </div>
+
+
     </div>
 
 
@@ -82,6 +179,18 @@
         });
 
       });
+
+      window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
 
     </script>
 

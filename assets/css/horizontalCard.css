@@ -49,22 +49,21 @@ hr {
 
 }
 
-.grid-container {
+.horizontalCard-container{
   display: grid;
   grid-template-areas:
     'left right-top'
     'left right-middle'
     'left right-bottom';
-  height: 300px;
-  background-color: white;
+  background-color: #fafafa;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
-  padding-bottom: 100px;
+  grid-auto-rows: minmax(min-content, max-content);
+  padding-bottom: 5vw;
 
 
 
 }
-.grid-container > div {
+.horizontalCard-container> div {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -79,6 +78,18 @@ hr {
 
 @media screen and (max-width: 500px) {
 
+  .right-top {
+     font-size: 4vw;
+   }
+
+   .right-middle {
+      font-size: 2vw;
+    }
+
+    .right-bottom {
+       font-size: 2vw;
+     }
+
   .cardLogo{
     max-width: 30vw;
     max-height:30vw;
@@ -92,13 +103,8 @@ hr {
       border-top: 2px solid #eee;
   }
 
-  .grid-container {
-
-
-    height: 100px;
-    padding-bottom:150px;
-
-
+  .horizontalCard-container{
+    padding-bottom:20px;
 
   }
 

@@ -1,16 +1,16 @@
 .name {
   color:black;
   font-family: verdana;
-  font-size: 70px;
+  font-size: 3.5vw;
   padding-bottom: 20px;
   font-family: 'Roboto', sans-serif;
 
 }
 
-.description {
+.jumbo-description {
   color:#99979E;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 1.5vw;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -19,9 +19,10 @@
   .name{
     font-size: 30px;
     padding-bottom: 10px;
+    padding-top: 0px;
   }
 
-  .description{
+.jumbo-description{
     font-size: 15px;
   }
 
