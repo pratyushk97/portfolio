@@ -1,0 +1,114 @@
+hr {
+    margin: 1.3vw 0;
+    border-width: 0.4vw;
+    width: 40%;
+    color: white;
+    border: 0;
+    border-top: 5px solid #eee;
+}
+.left {
+  grid-area: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: center;
+}
+.right-top {
+   grid-area: right-top;
+   border-top-right-radius: 10px;
+   font-size: 2vw;
+   padding-top: 20px;
+   color:white;
+   float: left;
+   text-align: left;
+   padding-left: 20px;
+   text-decoration: none;
+
+ }
+
+.right-middle {
+  grid-area: right-middle;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 1vw;
+  text-align: left;
+  color:white;
+
+}
+
+.right-bottom {
+  grid-area: right-bottom;
+  border-bottom-right-radius: 10px;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 1vw;
+  text-align: left;
+  color:white;
+  padding-bottom: 20px;
+
+}
+
+.horizontalCard-container{
+  display: grid;
+  grid-template-areas:
+    'left right-top'
+    'left right-middle'
+    'left right-bottom';
+  background-color: #fafafa;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  padding-bottom: 5vw;
+
+
+
+}
+.horizontalCard-container> div {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cardLogo{
+  max-width: 15vw;
+  max-height:15vw;
+  height: auto;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .right-top {
+     font-size: 4vw;
+   }
+
+   .right-middle {
+      font-size: 2vw;
+    }
+
+    .right-bottom {
+       font-size: 2vw;
+     }
+
+  .cardLogo{
+    max-width: 30vw;
+    max-height:30vw;
+    height: auto;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  hr {
+      border-top: 2px solid #eee;
+  }
+
+  .horizontalCard-container{
+    padding-bottom:20px;
+
+  }
+
+
+
+
+}

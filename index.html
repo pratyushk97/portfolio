@@ -1,398 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "background-color: #fafafa">
+
   <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Pratyush Khurana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/navBar.css" rel="stylesheet">
+    <link href="./assets/css/jumbotron.css" rel="stylesheet">
+    <link href="./assets/css/horizontalCard.css" rel="stylesheet">
+    <link href="./assets/css/squareCards-container.css" rel="stylesheet">
+    <link href="./assets/css/squareCards-section.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/favicon1.png">
 
-    <!-- Bootstrap -->
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./static/css/custom.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./static/images/favicon1.png">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
 
   <body>
-      <nav class="navbar navbar-fixed-top align-middle" role="navigation">
-        <div class="container">
-          <div class="navbar-header " >
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img class="logo img-responsive" src="./static/images/logo.png" /></a> <!--Logo goes to home-->
-          </div>
-          <div id="navbar" class="navbar-collapse collapse ">
-              <a class="navbar-brand  navbar-right inactive" href="about.html">About</a>
-              <a style="margin-right: 7%;" class="navbar-brand navbar-right active" href="#">Work</a>
-            </div><!--/.navbar-collapse -->
-        </div>
-      </nav>
 
-      <!-- Jumbotron -->
+    <div class="root-container">
+
+      <div class = "navBar">
+        <div class="header">
+          <a class = "logoImg" href="index.html"><img  src="./assets/images/logo.png" /></a>
+          <div class="header-right">
+            <a class="active" href="#home">Work</a>
+            <a href="about.html">About</a>
+          </div>
+        </div>
+      </div>
+
       <div class="jumbotron">
-        <div class="container" style="margin-top:10%;margin-bottom:5%;">
-          <h1 style="text-align: center;">Pratyush Khurana</h1>
-          <h2  style=" text-align: center; color:#99979E;">UX Designer & Engineer</h2>
-          <!--<h2 style="color:#4E76A0;">
-            <a class="typewrite" data-period="2000" data-type='[ "UX Designer.", "Something.", "Something." ]'>
-              <span class="wrap"></span>
-            </a>
-          </h2>-->
-
+        <div class = "name">
+          Pratyush Khurana
+        </div>
+        <div class =  "jumbo-description">
+          UX Designer & Engineer
         </div>
       </div>
 
+      <div class="horizontalCards">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-9">
-            <a class="card-link" href="https://google.com" target=" _blank">
-            <div class="horizontal-card" >
-                <img class="h-card-image" src="./static/images/etihad3.png" alt="Etihad Logo">
-                <div class="description" id="etihad-card">
-                  <h1 class="title" >Etihad Airways</h1>
-                  <hr>
-                  <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.  </h4>
-                  <div >
-                      <h4 class="details">Branding | Prototyping | User Testing<h4>
-
-                    <!--<div class="grid-item">
-                      <button class="h-card-circle"  id="etihad-cta" >
-                        <div class="s-card-arrow" id="etihad-arrow" href="#">
-                        </div></button>
-                    </div>-->
-                    </div>
-                  </div>
-                </div></a>
-              </div>
-            </div>
+        <div class="horizontalCard-container" >
+          <div style = "background-image: linear-gradient(to right, #8e1c20 , #54182d)" class="left">
+            <img class = cardLogo  src="./assets/images/etihad-airways-logo.png" />
           </div>
-
-
-
-        <!--<div class="row">
-          <div class="col-12">
-                <img class="h-card-image" src="test3.png" alt="Alchemy Logo">
-                <div class="description" id="alchemyx-card">
-                  <h1>AlchemyX</h1>
-                  <hr>
-                  <h4>Re-branding and designing a responsive website for a start-up incubator based in San Diego </h4>
-
-                  <h4 class="details">Branding | Prototyping | User Testing
-                    <div class="h-card-circle">
-                      <button id="alchemy-cta">
-                        <span class="s-card-arrow" id="alchemy-arrow"></span>
-                      </button>
-
-                    </div>
-
-                    <button class="h-card-circle"  id="alchemy-cta"><div class="s-card-arrow" id="alchemy-arrow" ></div></button>
-                  </h4>
-
-                </div>
-            </div>
+          <div style = "background-color:#54182d" class="right-top">
+            Etihad Airways Engineering
+            <hr>
           </div>
+          <div style = "background-color:#54182d" class="right-middle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+          <div style = "background-color:#54182d" class="right-bottom">Branding | Prototyping | User Testing</div>
         </div>
 
-
-        <div class="row">
-          <div class="col-lg">
-            <div class="horizontal-card">
-
-                <img class="h-card-image" src="yahoo.png" alt="Yahoo Logo">
-                  <div class="description" id="yahoo-card">
-                    <h1>Yahoo!</h1>
-                    <hr>
-                    <h4>A personal project focusing to improve the information architecture and visual design of Yahoo!'s homepage </h4>
-
-                    <h4 class="details">Wireframing | UX Research | User Journeys <a href="https://medium.com/@pratyushkhurana/yahoo-homepage-experience-341c554f51f9" target="_blank">
-                      <button class="h-card-circle" id="yahoo-cta"><div class="s-card-arrow" id="yahoo-arrow" ></div></button></a>
-                    </h4>
-                  </div>
-
-                </div>
-              </div>
-
-
+        <div class="horizontalCard-container">
+          <div style = "background-image: linear-gradient(to right, #4286f4 , #02336b)" class="left">
+            <img class = cardLogo  src="./assets/images/Letter-X-icon.png" />
           </div>
-        </div>-->
-
-      <h2 style="padding: 80px 0 30px 0;" align="center">Other Design Work</h2>
-
-      <div class="container">
-        <div class="row ">
-          <div class="col-sm-4">
-            <div class="square-card">
-              <figure>
-                <img class="square-card-img" src="./static/images/pal-card.png" alt="Pal Card">
-                <a href="https://medium.com/@pratyushkhurana/human-centered-design-project-mobile-classroom-b995729f1962" target="_blank"><button class="s-card-circle"><div class="s-card-arrow" id="pal-arrow"></div></button></a>
-                <figcaption>
-                  <p class="s-card-description">Mobile Classroom Experience</p>
-                  <p class="s-card-details">
-                    Designing a learning environment for underserved children in City Heights, San Diego
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
+          <div style = "background-color:#02336b" class="right-top">
+            Alchemy X
+            <hr>
           </div>
-
-
-
-
-
-          <div class="col-sm-4">
-            <div class="square-card">
-              <figure>
-                <img class="square-card-img" src="./static/images/label-card.png" alt="Label">
-                  <a href="https://medium.com/@pratyushkhurana/nutrition-label-experience-redesign-257566efc58a" target="_blank"><button class="s-card-circle"><div class="s-card-arrow" id="label-arrow"></div></button></a>
-                <figcaption>
-                  <p class="s-card-description">Nutrition Label Experience </p>
-                  <p class="s-card-details">
-                    Redesigning the nutrition label experience as part of an introductory design course
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-
-          <div class="col-sm-4">
-            <div class="square-card">
-              <figure>
-                <img class="square-card-img" src="./static/images/cleane-card.png" alt="Label">
-                <a href="https://medium.com/@pratyushkhurana/graphic-designing-with-cleane-io-23d26ec7124b" target="_blank"><button class="s-card-circle"><div class="s-card-arrow" id="cleane-arrow"></div></button></a>
-                <figcaption>
-                  <p class="s-card-description">Designing with Cleane.io</p>
-                  <p class="s-card-details">
-                    Creating stickers for a start-up as part of their marketing strategy to connect with students
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
+          <div style = "background-color:#02336b" class="right-middle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+          <div style = "background-color:#02336b" class="right-bottom">Branding | Prototyping | User Testing </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="square-card">
-              <figure>
-                <img class="square-card-img" id="imageresource2" src="./static/images/avatars-card.png" alt="Label">
-                <button class="s-card-circle" id="modal2"><div class="s-card-arrow" id="avatars-arrow"></div></button>
-                <figcaption>
-                  <p class="s-card-description">Profession Avatars</p>
-                  <p class="s-card-details">
-                  Created avatars on Illustrator to practice and gain knowledge of  designing flat graphics
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="modal fade" id="imagemodal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-body">
-                  <button  class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="close">&times;</span>
-                  </button>
-                  <img src="profession-avatars.jpg " class="img-responsive" id="imagepreview2" >
-                </div>
-
-              </div>
-            </div>
-
-
-
-          <div class="col-md-4">
-            <div class="square-card">
-              <figure>
-                <img class="square-card-img" id="imageresource" src="./static/images/floral-card.png" alt="Label">
-                <button class="s-card-circle" id="modal" ><div class="s-card-arrow" id="floral-arrow"></div></button>
-                <figcaption>
-                  <p class="s-card-description">Floral Typography</p>
-                  <p class="s-card-details">
-                    Designed 3D type to better understand masking and shadow techniques using Photoshop
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-body">
-                  <button  class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="close">&times;</span>
-                  </button>
-                  <img src="floral-text.jpg" class="img-responsive" id="imagepreview" >
-                </div>
-
-              </div>
-            </div>
-
-
-          <div class="col-md-4">
-            <div class="square-card">
-              <figure>
-                <img class="square-card-img" id="imageresource3" src="./static/images/icons-card.png" alt="Label">
-                <button class="s-card-circle" id="modal3" ><div class="s-card-arrow" id="icons-arrow"></div></button>
-                <figcaption>
-                  <p class="s-card-description">Icon Pack</p>
-                  <p class="s-card-details">
-                    Designed a summer themed icon pack to familiarize myself with Illustrator's resources
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
+      <div class="horizontalCard-container">
+        <div style = "background-image: linear-gradient(to right, #009933 , #004d1a)" class="left">
+          <img class = cardLogo  src="./assets/images/UCSD-logo.png" />
         </div>
+        <div style = "background-color:#004d1a" class="right-top">
+          UCSD
+          <hr>
+        </div>
+        <div style = "background-color:#004d1a" class="right-middle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+        <div style = "background-color:#004d1a" class="right-bottom">Branding | Prototyping | User Testing </div>
+    </div>
+
+    </div>
+
+
+      <div class="squareCards">
+        <p>Other Design Work</p>
+        <div class="squareCardsSection">
+
+          <a class="squareCards-container" href="index.html">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/pal-card.png" />
+            </div>
+            <div class="title">
+              Mobile Classroom Experience
+            </div>
+            <div class="description">
+              Designing a learning environment for underserved children in City Heights, San Diego
+            </div>
+          </a>
+
+          <a class="squareCards-container" href="index.html">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/label-card.png" />
+            </div>
+            <div class="title">
+              Nutrition Label Experience
+            </div>
+            <div class="description">
+              Redesigning the nutrition label experience as part of an introductory design course
+            </div>
+          </a>
+
+          <a class="squareCards-container" href="index.html">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/cleane-card.png" />
+            </div>
+            <div class="title">
+              Designing with Cleane.io
+            </div>
+            <div class="description">
+              Creating stickers for a start-up as part of their marketing strategy to connect with students
+            </div>
+          </a>
+
+          <a class="squareCards-container" href="index.html">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/profession-avatars.jpg" />
+            </div>
+            <div class="title">
+              Profession Avatars
+            </div>
+            <div class="description">
+              Created avatars on Illustrator to practice and gain knowledge of designing flat graphics
+            </div>
+          </a>
+
+          <a class="squareCards-container" href="index.html">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/floral-card.png" />
+            </div>
+            <div class="title">
+              Floral Typography
+            </div>
+            <div class="description">
+              Designed 3D type to better understand masking and shadow techniques using Photoshop
+            </div>
+          </a>
+
+          <a class="squareCards-container" href="index.html">
+            <div class="image">
+              <img class = cardImage  src="./assets/images/icon-pack.jpg" />
+            </div>
+            <div class="title">
+              Icon Pack
+            </div>
+            <div class="description">
+              Designed a summer themed icon pack to familiarize myself with Illustrator's resources
+            </div>
+          </a>
+
+        </div>
+
       </div>
 
-      <div class="modal fade" id="imagemodal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-body">
-              <button  class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="close">&times;</span>
-              </button>
-              <img src="icon-pack.jpg " class="img-responsive" id="imagepreview3" >
-            </div>
 
-          </div>
-        </div>
+      <div class="Footer">
 
-
-        <div class="container">
-          <div class="row footer">
-            <div class="col-md-6"style="padding-left:0;"><h4><em>Pratyush Khurana</em></h4>
-            </div>
-            <div class="col-md-6 footer-icons">
-              <a data-toggle="tooltip" title="Resume" href="# target="_blank""><i class="fas fa-file-alt fa-2x icon"></i></a>
-              <a data-toggle="tooltip" title="Email" href="mailto:pratyushk97@gmail.com"><i class="fas fa-envelope fa-2x icon"></i></a>
-              <a data-toggle="tooltip" title="LinkedIn" href="https://www.linkedin.com/in/pratyush97/"target="_blank"><i class="fab fa-linkedin fa-2x icon"></i></a>
+          <div class="footerBar">
+            Pratyush Khurana
+            <div class="footer-right">
+              <a class = "footerIcon" href="index.html"><img src="./assets/images/fileicon.png" /></a>
+              <a class = "footerIcon" href="index.html"><img src="./assets/images/email.png"   /></a>
+              <a class = "footerIcon" href="index.html"><img src="./assets/images/linkedin.png" /></a>
             </div>
           </div>
-        </div>
+
+
+      </div>
+
+
     </div>
 
 
 
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script>
-    var TxtType = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
+      $(function() {
 
-        TxtType.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) { delta /= 3; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-              delta = this.period;
-              this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-              this.isDeleting = false;
-              this.loopNum++;
-              delta = 500;
-            }
-
-            setTimeout(function() {
-            that.tick();
-            }, delta);
-        };
-
-        window.onload = function() {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i=0; i<elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                  new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #1b1b1b }";
-            document.body.appendChild(css);
-        };
-    </script>
-
-
-<script>
-var scrollp=0;
-  (function ($) {
-      $(document).ready(function(){
-          $(function () {
-              $(window).scroll(function () {
-                  if ($(this).scrollTop() < scrollp) {
-                      $('.navbar').fadeIn();
-                      scrollp= $(this).scrollTop();
-                  } else {
-                      $('.navbar').fadeOut();
-                      scrollp= $(this).scrollTop();
-                  }
-              });
-          });
+        $("#toggle").click(function() {
+          $(this).toggleClass("on");
+          $("#resize").toggleClass("active");
+        });
 
       });
-  }(jQuery));</script>
 
-  <script>
-  $("#modal").on("click", function() {
-   $('#imagepreview').attr('src', $('#imageresource').attr('floral-text.jpg')); // here asign the image to the modal when the user click the enlarge link
-   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+    </script>
 
-});
-  $("#modal2").on("click", function() {
-   $('#imagepreview2').attr('src', $('#imageresource2').attr('profession-avatars.jpg')); // here asign the image to the modal when the user click the enlarge link
-   $('#imagemodal2').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
-  });
-
-  $("#modal3").on("click", function() {
-   $('#imagepreview3').attr('src', $('#imageresource3').attr('icon-pack.jpg')); // here asign the image to the modal when the user click the enlarge link
-   $('#imagemodal3').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
-  });
-</script>
-
-    <script src="js/bootstrap.min.js"></script>
   </body>
+
+
 </html>
-`

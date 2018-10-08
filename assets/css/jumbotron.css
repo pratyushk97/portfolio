@@ -1,0 +1,29 @@
+.name {
+  color:black;
+  font-family: verdana;
+  font-size: 3.5vw;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.jumbo-description {
+  color:#99979E;
+  padding-bottom: 20px;
+  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@media screen and (max-width: 500px) {
+  .name{
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+
+.jumbo-description{
+    font-size: 15px;
+  }
+
+}
